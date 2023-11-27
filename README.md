@@ -1,6 +1,6 @@
 # Yogi Food website
 
-![social-preview-image](https://user-images.githubusercontent.com/3909046/219942674-9894853e-def8-4180-84b8-6b577dacfcaa.png)
+![CleanShot 2023-11-27 at 22 58 18@2x](https://github.com/honocoder/yogifood/assets/84329916/5d3b1301-6883-4e1b-bae3-dc2eb2270232)
 
 This is the website of Yogi Food, a new restaurant in Amiens, France, offering delicious Corean street food.
 
