@@ -4,13 +4,15 @@ import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
 import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
+
+import tteokbokki from '../../public/tteokbokki.jpg'
 ---
 
 <DefaultLayout title="Home">
   <Hero />
   <section class="my-64">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Notre cuisine est</h2>
+      <h2 class="mb-16 text-6xl">Notre cuisine est...</h2>
       <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
         <Feature icon="ph:heart-bold" title="Saine">
           La street food coréenne est saine, vous permettant de vous faire plaisir sans vous faire de mal.
@@ -33,31 +35,36 @@ import ContentMedia from '../components/ContentMedia.astro'
       </div>
     </div>
   </section>
-  <ContentMedia imgSrc="/accessible-components.webp">
-    <h2>Accessible Components</h2>
-    <p class="text-2xl">
-      This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
-      lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
-        >separate package</a
-      >. They'll get you up and running in building an accessible solution for your visitors.
-    </p>
-  </ContentMedia>
-  <ContentMedia imgSrc="/wcag-compliant.webp" reverseImg={true}>
-    <h2>WCAG 2.1 AA Compliant</h2>
-    <p class="text-2xl">
-      Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
-      navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain of
-      reaching WCAG AA compliance.
-    </p>
-  </ContentMedia>
-  <section class="mt-64 mb-32">
+
+  <div class="container">
+    <h2 class="mb-2 text-6xl">Nos plats phares</h2>
+    <ContentMedia imgSrc="/bibimbab.jpg">
+      <h2>Bibimbab</h2>
+      <p class="text-2xl">
+        This theme provides plenty of tried and tested Accessible Astro Components. Some are native to this theme and a
+        lot of others are integrated using a <a href="https://github.com/markteekman/accessible-astro-components"
+          >separate package</a
+        >. They'll get you up and running in building an accessible solution for your visitors.
+      </p>
+    </ContentMedia>
+    <ContentMedia imgSrc="/bulgogi.jpg" reverseImg={true}>
+      <h2>Bulgogi</h2>
+      <p class="text-2xl">
+        Using semantic HTML, landmarks, skip links, screen reader friendly content, aria-labels, keyboard accessible
+        navigation and components, clear outlines and tab indicators and the right color contrast, you're more certain
+        of reaching WCAG AA compliance.
+      </p>
+    </ContentMedia>
+  </div>
+
+  <section class="mb-32 mt-64">
     <div class="container">
-      <h2 class="mb-16 text-6xl">Counters</h2>
+      <h2 class="mb-16 text-6xl">À remplacer par des photos de plats</h2>
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="130" title="Stars" sub="On GitHub" />
-        <Counter count="17" title="Accessible" sub="Components" />
-        <Counter count="500" title="Commits" sub="Merged" />
-        <Counter count="18+" title="Months" sub="Since launch" />
+        <Counter count="130" src={tteokbokki} title="Plat 1" sub="On GitHub" />
+        <Counter count="17" src={} title="Plat 2" sub="Components" />
+        <Counter count="500" src={} title="Plat 3" sub="Merged" />
+        <Counter count="18+" src={} title="Plat 4" sub="Since launch" />
       </div>
     </div>
   </section>
