@@ -2,11 +2,32 @@
 // | Font
 // | -------------------------------------------------------------
 
-// TODO: Ephesus Extrabold | Verdana Regular & Bold
-
 @use 'breakpoint' as *;
 
-// TODO: import custom fonts (Ephesus Extrabold for title, Verdana Regular & Bold for body)
+@font-face {
+  font-family: 'Ephesus Extrabold';
+  src: url('/fonts/Ephesus/Ephesus-Extrabold.woff2') format('woff2'),
+    url('/fonts/Ephesus/Ephesus-Extrabold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Verdana Regular';
+  src: url('/fonts/Verdana/verdana.woff2') format('woff2'), url('/fonts/Verdana/verdana.woff') format('woff');
+  font-weight: regular;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Verdana Bold';
+  src: url('/fonts/Verdana/verdana-bold.woff2') format('woff2'), url('/fonts/Verdana/verdana-bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 
 // @font-face {
 //   font-family: 'Open Sans';

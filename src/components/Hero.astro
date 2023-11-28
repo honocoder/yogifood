@@ -9,18 +9,17 @@ const { src = '/bibimbab.jpg' } = Astro.props
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
         <h1 class="text-center text-6xl md:text-left lg:text-8xl">
-          <slot><span class="text-gradient">Yogi Food</span>, la street food coréenne à Amiens</slot>
+          <slot
+            ><span class="text-gradient">Yogi Food</span>, la street food <span class="text-gradient">coréenne</span> à Amiens</slot
+          >
         </h1>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
-          <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
-            <Icon pack="ion" name="star-outline" />
+          <a class="button has-icon" href="https://github.com/honocoder">
+            <Icon pack="ic" name="outline-food-bank" />
             Commander
           </a>
-          <a
-            class="button has-icon color-secondary"
-            href="https://github.com/markteekman/accessible-astro-starter/blob/main/README.md"
-          >
-            <Icon pack="ion" name="bookmark-outline" />
+          <a class="button has-icon color-primary" href="https://github.com/honocoder">
+            <Icon pack="jam" name="document" />
             Voir le menu
           </a>
         </div>
@@ -32,16 +31,10 @@ const { src = '/bibimbab.jpg' } = Astro.props
 
 <style lang="scss">
   .text-gradient {
-    background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-500));
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary-400);
   }
 
   :global(.darkmode .text-gradient) {
-    background: linear-gradient(315deg, var(--primary-200) 25%, var(--secondary-400));
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary-400);
   }
 </style>

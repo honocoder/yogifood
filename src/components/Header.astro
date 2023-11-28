@@ -17,9 +17,12 @@ import { Icon } from 'astro-icon'
       <a href="/contact/">Contact</a>
     </li>
 
-    <li class="menu-item type-icon">
+    <li class="menu-item type-icon type-icon-button">
       <a href="https://github.com/markteekman/accessible-astro-starter" title="Go to the GitHub page">
-        <Icon pack="ion" name="logo-github" />
+        <div class="icon-wrapper">
+          <Icon pack="ic" name="outline-food-bank" />
+          <span class="menu-item-text">Commander</span>
+        </div>
       </a>
     </li>
   </Navigation>
@@ -31,6 +34,12 @@ import { Icon } from 'astro-icon'
   header {
     .type-icon a {
       display: block;
+
+      .icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
       [astro-icon] {
         margin-top: -4px;
@@ -48,5 +57,13 @@ import { Icon } from 'astro-icon'
         }
       }
     }
+
+    // .type-icon-button {
+    //   padding: 0;
+    //   border: none;
+    //   background: var(--action-color);
+    //   color: white;
+    //   cursor: pointer;
+    // }
   }
 </style>
