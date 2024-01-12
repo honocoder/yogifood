@@ -2,10 +2,12 @@
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import Hero from '../components/Hero.astro'
 import Feature from '../components/Feature.astro'
-import Counter from '../components/Counter.astro'
+// import Counter from '../components/Counter.astro'
 import ContentMedia from '../components/ContentMedia.astro'
 
-import tteokbokki from '../../public/tteokbokki.jpg'
+import { Media } from 'accessible-astro-components'
+
+import tteokbokki from './assets/img/tteokbokki.jpg'
 ---
 
 <DefaultLayout title="Home">
@@ -52,21 +54,20 @@ import tteokbokki from '../../public/tteokbokki.jpg'
       <p class="text-2xl">
         Le Bulgogi est un plat coréen constitué de fines tranches de bœuf marinées dans une sauce sucrée et savoureuse à
         base de soja, de sucre, d'ail et de sésame. Cette viande est ensuite grillée ou sautée, ce qui lui donne une
-        texture tendre et un goût riche. Bulgogi est souvent servi avec du riz et des légumes, et est apprécié pour sa
-        saveur douce mais profonde.
+        texture tendre et un goût riche. Le Bulgogi est souvent servi avec du riz et des légumes, et est apprécié pour
+        sa saveur douce mais profonde.
       </p>
     </ContentMedia>
   </div>
 
-  <section class="mb-32 mt-64">
-    <div class="container">
-      <h2 class="mb-16 text-6xl">À remplacer par des photos de plats</h2>
-      <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4">
-        <Counter count="130" src={tteokbokki} title="Plat 1" sub="On GitHub" />
-        <Counter count="17" src={} title="Plat 2" sub="Components" />
-        <Counter count="500" src={} title="Plat 3" sub="Merged" />
-        <Counter count="18+" src={} title="Plat 4" sub="Since launch" />
-      </div>
-    </div>
-  </section>
+  <!-- <section class="mt-64 mb-32">
+    <h2 class="mb-16 text-6xl">À remplacer par des photos de plats</h2>
+    <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-4"> -->
+      <!-- <Counter count="130" src={} title="Plat 1" sub="On GitHub" />
+      <Counter count="17" src={} title="Plat 2" sub="Components" />
+      <Counter count="500" src={} title="Plat 3" sub="Merged" />
+      <Counter count="18+" src={} title="Plat 4" sub="Since launch" /> -->
+      <!-- <Media src={tteokbokki} class="rounded-lg aspect-square" /> -->
+    <!-- </div>
+  </section> -->
 </DefaultLayout>

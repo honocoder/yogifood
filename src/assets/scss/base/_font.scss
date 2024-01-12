@@ -77,7 +77,7 @@ body {
   -webkit-font-smoothing: antialiased;
 
   a:not(.button) {
-    color: var(--action-color);
+    color: var(--primary-400);
     text-decoration: underline;
 
     &:visited {

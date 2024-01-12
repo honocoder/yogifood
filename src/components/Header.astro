@@ -11,14 +11,17 @@ import { Icon } from 'astro-icon'
       <a href="/">Accueil</a>
     </li>
     <li class="menu-item">
-      <a href="/blog/">La carte</a>
+      <a href="/carte/">La carte</a>
     </li>
     <li class="menu-item">
       <a href="/contact/">Contact</a>
     </li>
 
     <li class="menu-item type-icon type-icon-button">
-      <a href="https://github.com/markteekman/accessible-astro-starter" title="Go to the GitHub page">
+      <a
+        href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz?geohash=u0ceggbg1c5e"
+        title="Aller sur Deliveroo"
+      >
         <div class="icon-wrapper">
           <Icon pack="ic" name="outline-food-bank" />
           <span class="menu-item-text">Commander</span>
@@ -46,14 +49,14 @@ import { Icon } from 'astro-icon'
         width: 30px;
 
         path {
-          fill: var(--action-color);
+          fill: var(--primary-400);
           transition: fill 0.2s ease-in-out;
         }
       }
 
       &:hover {
         [astro-icon] path {
-          fill: var(--action-color-state);
+          fill: var(--primary-400);
         }
       }
     }
