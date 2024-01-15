@@ -1,0 +1,24 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import ContactForm from '../components/ContactForm.astro'
+import Map from '../components/Map.astro'
+---
+
+<DefaultLayout>
+  <div class="my-10 mx-14">
+    <h1 class="mb-10">Contact</h1>
+    <div class="mx-auto">
+      <ContactForm />
+    </div>
+
+    <div class="flex mt-10">
+      <div class="flex flex-col justify-center w-2/3">
+        <h5>Adresse : 19 rue de Metz, 80000 Amiens</h5>
+        <h5>Horaires : du lundi au vendredi de 12h à 14h et 18h à 21h</h5>
+      </div>
+      <div>
+        <Map />
+      </div>
+    </div>
+  </div>
+</DefaultLayout>
