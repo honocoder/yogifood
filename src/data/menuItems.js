@@ -43,8 +43,8 @@ export const menuItems = [
   },
   {
     id: 8,
-    name: 'K-Chicken (uniquement le mercredi et le samedi)',
-    price: '6pcs : 11,70€ | 10pcs : 15€',
+    name: 'K-Chicken',
+    price: '6pcs : 11,70€ | 10pcs : 15€ | uniquement le mercredi et le samedi',
     image: 'https://res.cloudinary.com/jimymltta/image/upload/v1705073727/Yogi%20Food/K-Chicken_m2gall.jpg',
   },
 ]
