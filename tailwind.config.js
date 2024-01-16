@@ -5,5 +5,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-  darkMode: ['class', '.darkmode'],
+  // darkMode: ['class', '.darkmode'], // uncomment this to enbable dark mode by default
 }
