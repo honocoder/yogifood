@@ -5,19 +5,19 @@ import Map from '../components/Map.astro'
 ---
 
 <DefaultLayout>
-  <div class="my-10 mx-14">
-    <h1 class="mb-10">Contact</h1>
-    <div class="mx-auto">
+  <div class="px-4 py-8 sm:mx-14 sm:my-10">
+    <h1 class="text-xxl mb-5 font-bold sm:mb-10">Contact</h1>
+    <div class="flex items-center justify-center">
       <ContactForm />
     </div>
 
-    <div class="flex mt-10">
-      <div class="flex flex-col justify-center w-2/3">
-        <h5>Téléphone : 03 22 80 93 16</h5>
-        <h5>Adresse : 19 rue de Metz, 80000 Amiens</h5>
-        <h5>Horaires : du lundi au vendredi de 12h à 15h et 17h à 22h</h5>
+    <div class="mt-8 sm:flex">
+      <div class="sm:w-2/3">
+        <h5 class="mb-3 text-lg">Téléphone : 03 22 80 93 16</h5>
+        <h5 class="mb-3 text-lg">Adresse : 19 rue de Metz, 80000 Amiens</h5>
+        <h5 class="mb-3 text-lg">Horaires : du lundi au vendredi de 12h à 15h et 17h à 22h</h5>
       </div>
-      <div>
+      <div class="mt-8 sm:mt-0">
         <Map />
       </div>
     </div>
