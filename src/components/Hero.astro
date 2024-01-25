@@ -1,11 +1,31 @@
 ---
 import { Icon } from 'astro-icon'
 
-const { src = 'https://res.cloudinary.com/jimymltta/image/upload/v1706217367/Yogi%20Food/Bibimbap_from_Gmail_j2ivj5.png' } =
+const { src = 'https://res.cloudinary.com/jimymltta/image/upload/v1706219526/Yogi%20Food/banniere-yogi_prvooi.png' } =
   Astro.props
 ---
 
-<section class="my-24 hero">
+<section class="relative h-screen bg-center bg-no-repeat bg-cover" style={{ backgroundImage: `url(${src})` }}>
+  <div class="flex flex-col items-center justify-center h-full">
+    <div>
+      <div class="flex flex-col gap-3 min-[500px]:flex-row mt-12">
+          <a
+            class="button has-icon"
+            href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz?geohash=u0ceggbg1c5e"
+          >
+            <Icon pack="ic" name="outline-food-bank" />
+            Commander
+          </a>
+          <a class="button has-icon color-primary" href="/carte">
+            <Icon pack="jam" name="document" />
+            Voir le menu
+          </a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- <section class="my-24 hero">
   <div class="container">
     <div class="grid items-center grid-cols-1 gap-24 lg:grid-cols-2">
       <div class="flex flex-col items-center gap-8 md:items-start">
@@ -31,7 +51,7 @@ const { src = 'https://res.cloudinary.com/jimymltta/image/upload/v1706217367/Yog
       <img class="hidden rounded-lg aspect-square lg:block" src={src} alt="" decoding="async" />
     </div>
   </div>
-</section>
+</section> -->
 
 <style lang="scss">
   .text-gradient {
