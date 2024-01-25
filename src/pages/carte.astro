@@ -6,13 +6,13 @@ import { Image } from 'astro:assets'
 
 <DefaultLayout title="La carte">
   <section class="y-12">
-    <div class="mx-14 my-10">
+    <div class="my-10 mx-14">
       <h1>Notre carte</h1>
       <p>Découvrez nos délicieux plats</p>
     </div>
-    <h2 class="mx-14 my-10">Plats</h2>
-    <div class="mx-10 flex items-center justify-center">
-      <div class="mx-4 grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+    <h2 class="my-10 mx-14">Plats</h2>
+    <div class="flex items-center justify-center mx-10">
+      <div class="grid grid-cols-1 gap-8 mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {
           menuItems.map((item) => (
             <div>
@@ -22,7 +22,7 @@ import { Image } from 'astro:assets'
                   alt={item.name}
                   width="250"
                   height="250"
-                  class="aspect-square h-auto w-full object-cover"
+                  class="object-cover w-full h-auto aspect-square"
                 />
                 <div>
                   <h3>{item.name}</h3>
@@ -37,23 +37,23 @@ import { Image } from 'astro:assets'
     </div>
 
     <div>
-      <h2 class="mx-14 mt-10">Combos</h2>
+      <h2 class="mt-10 mx-14">Combos</h2>
       <p class="mx-14">Les Combos sont disponibles uniquement le midi</p>
-      <div class="mx-10 my-20 flex items-center justify-center">
-        <div class="mx-4 grid grid-cols-1 gap-20 md:grid-cols-2">
+      <div class="flex items-center justify-center mx-10 my-20">
+        <div class="grid grid-cols-1 gap-20 mx-4 md:grid-cols-2">
           <a
             href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
           >
-            <div class="rounded border border-white p-10">
-              <h4>Ddeokbokki + Demi KimBap</h4>
+            <div class="p-10 border border-white rounded">
+              <h4>Ddeokbokki 떡볶이 + Demi KimBap 김밥</h4>
               <span>10,50€</span>
             </div>
           </a>
           <a
             href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
           >
-            <div class="rounded border border-white p-10">
-              <h4>Ddeokbokki + Demi KimBap</h4>
+            <div class="p-10 border border-white rounded">
+              <h4>Ddeokbokki + Demi KimBap 김밥</h4>
               <span>11€</span>
             </div>
           </a>
@@ -62,19 +62,19 @@ import { Image } from 'astro:assets'
     </div>
 
     <div>
-      <h2 class="mx-14 mt-10">Dochirak</h2>
+      <h2 class="mt-10 mx-14">Dochirak</h2>
       <p class="mx-14"></p>
-      <div class="mx-10 my-20 flex items-center justify-center">
-        <div class="mx-4 grid grid-cols-1 gap-20 md:grid-cols-2">
+      <div class="flex items-center justify-center mx-10 my-20">
+        <div class="grid grid-cols-1 gap-20 mx-4 md:grid-cols-2">
           <a
             href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669045"
           >
-            <div class="rounded border border-white p-10">
+            <div class="p-10">
               <img
                 src="https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/Bulgogi_flgeaq.jpg"
                 width="500"
                 height="500"
-                class="mb-6 aspect-square h-auto w-full object-cover"
+                class="object-cover w-full h-auto mb-6 aspect-square"
               />
               <h4>Bulgogi</h4>
               <span>11,50€ sans boisson | 13€ avec boisson</span>
@@ -83,12 +83,12 @@ import { Image } from 'astro:assets'
           <a
             href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669049"
           >
-            <div class="rounded border border-white p-10">
+            <div class="p-10">
               <img
                 src="https://res.cloudinary.com/jimymltta/image/upload/v1705073717/Yogi%20Food/Spam_m6fkyj.jpg"
                 width="500"
                 height="500"
-                class="mb-6 aspect-square h-auto w-full object-cover"
+                class="object-cover w-full h-auto mb-6 aspect-square"
               />
               <h4>Spam</h4>
               <span>11,50€ sans boisson | 13€ avec boisson</span>
@@ -99,17 +99,17 @@ import { Image } from 'astro:assets'
     </div>
 
     <div>
-      <h2 class="mx-14 mt-10">Banchan</h2>
-      <div class="mx-10 my-20 flex items-center justify-center">
+      <h2 class="mt-10 mx-14">Banchan</h2>
+      <div class="flex items-center justify-center mx-10 my-20">
         <a
           href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669033"
         >
-          <div class="rounded border border-white p-10">
+          <div class="p-10">
             <img
               src="https://res.cloudinary.com/jimymltta/image/upload/v1705073717/Yogi%20Food/Omelette_roule%CC%81_qxmspm.jpg"
               width="250"
               height="250"
-              class="mb-6 aspect-square h-auto object-cover"
+              class="object-cover h-auto mb-6 aspect-square"
             />
             <h4>Omelette roulée</h4>
             <span>6,50€</span>
@@ -119,8 +119,8 @@ import { Image } from 'astro:assets'
     </div>
 
     <div>
-      <h2 class="mx-14 mt-10">Boissons</h2>
-      <div class="mx-14 my-20">
+      <h2 class="mt-10 mx-14">Boissons</h2>
+      <div class="my-20 mx-14">
         <p>Coréenne - 3,50€</p>
         <p>San Pellegrino 33cl, orange sanguine/orange/menthe & citron - 2,10€</p>
         <p>San Pellegrino 33cl, eau gazeuse - 1,90€</p>
