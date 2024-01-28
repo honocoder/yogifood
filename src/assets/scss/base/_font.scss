@@ -78,7 +78,7 @@ body {
 
   a:not(.button) {
     color: var(--primary-400);
-    text-decoration: underline;
+    text-decoration: none;
 
     &:visited {
       color: var(--primary-400);
