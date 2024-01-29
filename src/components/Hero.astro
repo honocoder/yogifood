@@ -1,14 +1,19 @@
 ---
 import { Icon } from 'astro-icon'
 
-const { src = 'https://res.cloudinary.com/jimymltta/image/upload/v1706219526/Yogi%20Food/banniere-yogi_prvooi.png' } =
-  Astro.props
+const {
+  desktopImg = 'https://res.cloudinary.com/jimymltta/image/upload/v1706562933/Yogi%20Food/hero-yogi-desktop_d1lzf3.png',
+  mobileImg = 'https://res.cloudinary.com/jimymltta/image/upload/v1706562868/Yogi%20Food/hero-yogi-mobile_vwb7b6.png',
+} = Astro.props
 ---
 
-<section class="custom-background relative bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${src})` }}>
-  <div class="flex h-full flex-col items-center justify-center">
+<section
+  class="relative bg-center bg-no-repeat bg-cover custom-background"
+  style={{ backgroundImage: `url(${desktopImg})` }}
+>
+  <div class="flex flex-col items-center justify-center h-full">
     <div>
-      <div class="button-container mt-12 flex flex-col gap-3 sm:flex-row">
+      <div class="flex flex-col gap-3 mt-12 button-container sm:flex-row">
         <a
           class="button has-icon"
           href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz?geohash=u0ceggbg1c5e"
