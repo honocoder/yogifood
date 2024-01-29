@@ -1,7 +1,7 @@
 export const menuItems = [
   {
     id: 1,
-    name: 'BULGOBI DEOPBAP 불고기덮밥',
+    name: 'BULGOBI DOPBAP 불고기덮밥',
     price: '13.70€',
     image: 'https://res.cloudinary.com/jimymltta/image/upload/v1706217367/Yogi%20Food/Bibimbap_from_Gmail_j2ivj5.png',
     link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669045',
@@ -15,7 +15,7 @@ export const menuItems = [
   },
   {
     id: 3,
-    name: 'K-RAMYUN 부대찌개',
+    name: 'K-RAMEN 부대찌개',
     price: '14.70€',
     image: 'https://res.cloudinary.com/jimymltta/image/upload/v1705073717/Yogi%20Food/K-Ramyun_usjhxf.jpg',
   },
@@ -28,14 +28,14 @@ export const menuItems = [
   },
   {
     id: 5,
-    name: 'JJAJANG 짜장밥',
+    name: 'JAJANG 짜장밥',
     price: '12.70€',
     image: 'https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/Jjajang_ud9rov.jpg',
     link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669040',
   },
   {
     id: 6,
-    name: 'DDEOKBOKKI 떡볶이',
+    name: 'TOPOKI 떡볶이',
     price: '10.40€',
     image: 'https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/Ddeokbokki_porx6d.jpg',
     link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669035',
