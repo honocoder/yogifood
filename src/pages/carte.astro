@@ -25,7 +25,7 @@ import { Image } from 'astro:assets'
                   class="aspect-square h-auto w-full object-cover"
                 />
                 <div>
-                  <h3>{item.name}</h3>
+                  <h3 class="font-bold">{item.name}</h3>
                   <p>{item.description}</p>
                   <span>{item.price}</span>
                 </div>
@@ -45,7 +45,7 @@ import { Image } from 'astro:assets'
             href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
           >
             <div class="rounded border border-white p-10">
-              <h4>DDEOKBOKKI 떡볶이 + DEMI KIMBAP 김밥</h4>
+              <h4 class="font-bold">DDEOKBOKKI 떡볶이 + DEMI KIMBAP 김밥</h4>
               <span>10,50€</span>
             </div>
           </a>
@@ -53,7 +53,7 @@ import { Image } from 'astro:assets'
             href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
           >
             <div class="rounded border border-white p-10">
-              <h4>RAMYUN 부대찌개 + DEMI KIMBAP 김밥</h4>
+              <h4 class="font-bold">RAMYUN 부대찌개 + DEMI KIMBAP 김밥</h4>
               <span>11€</span>
             </div>
           </a>
@@ -76,7 +76,7 @@ import { Image } from 'astro:assets'
                 height="500"
                 class="mb-6 aspect-square h-auto w-full object-cover"
               />
-              <h4>BULGOGI 불고기</h4>
+              <h4 class="font-bold">BULGOGI 불고기</h4>
               <span>11,50€ sans boisson | 13€ avec boisson</span>
             </div>
           </a>
@@ -90,7 +90,7 @@ import { Image } from 'astro:assets'
                 height="500"
                 class="mb-6 aspect-square h-auto w-full object-cover"
               />
-              <h4>SPAM 스펨</h4>
+              <h4 class="font-bold">SPAM 스펨</h4>
               <span>11,50€ sans boisson | 13€ avec boisson</span>
             </div>
           </a>
@@ -111,7 +111,7 @@ import { Image } from 'astro:assets'
               height="250"
               class="mb-6 aspect-square h-auto object-cover"
             />
-            <h4>OMELETTE ROULÉE</h4>
+            <h4 class="font-bold">OMELETTE ROULÉE</h4>
             <span>6,50€</span>
           </div>
         </a>
@@ -121,22 +121,22 @@ import { Image } from 'astro:assets'
     <div>
       <h2 class="mx-14 mt-10 text-yogi-blue">Boissons 음료</h2>
       <div class="mx-14 my-20">
-        <p>Coréenne - 3,50€</p>
-        <p>San Pellegrino 33cl, orange sanguine/orange/menthe & citron - 2,10€</p>
-        <p>San Pellegrino 33cl, eau gazeuse - 1,90€</p>
-        <p>Coca-Cola - 3€</p>
-        <p>Sprite - 1,90€</p>
-        <p>Evian 50cl - 1,90€</p>
-        <p>Bière sans alcool - 5€</p>
-        <p>Café coréen - 2€</p>
+        <p><span class="font-bold">Coréenne</span> - 3,50€</p>
+        <p><span class="font-bold">San Pellegrino 33cl, orange sanguine/orange/menthe & citron</span> - 2,10€</p>
+        <p><span class="font-bold">San Pellegrino 33cl, eau gazeuse</span> - 1,90€</p>
+        <p><span class="font-bold">Coca-Cola</span> - 3€</p>
+        <p><span class="font-bold">Sprite</span> - 1,90€</p>
+        <p><span class="font-bold">Evian 50cl</span> - 1,90€</p>
+        <p><span class="font-bold">Bière sans alcool</span> - 5€</p>
+        <p><span class="font-bold">Café coréen</span> - 2€</p>
       </div>
     </div>
 
     <div>
       <h2 class="mx-14 mt-10 text-yogi-blue">Desserts 디저트</h2>
       <div class="mx-14 my-20">
-        <p>Cookie + Glace - 5,50€</p>
-        <p>Croissant garni - 5€</p>
+        <p><span class="font-bold">Cookie + Glace</span> - 5,50€</p>
+        <p><span class="font-bold">Croissant garni</span> - 5€</p>
       </div>
     </div>
   </section>
