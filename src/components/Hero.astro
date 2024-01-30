@@ -7,7 +7,7 @@ const {
 } = Astro.props
 ---
 
-<section
+<!-- <section
   class="relative bg-center bg-no-repeat bg-cover custom-background"
   style={{ backgroundImage: `url(${desktopImg})` }}
 >
@@ -28,9 +28,7 @@ const {
       </div>
     </div>
   </div>
-</section>
-
-<style lang="scss">
+</section> --><!-- <style lang="scss">
   .custom-background {
     height: 100vh;
     width: 100vw;
@@ -56,4 +54,58 @@ const {
   :global(.darkmode .text-gradient) {
     color: var(--primary-400);
   }
+</style> -->
+<style lang="scss">
+  .custom-background {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-image: url(https://res.cloudinary.com/jimymltta/image/upload/v1706562933/Yogi%20Food/hero-yogi-desktop_d1lzf3.png);
+
+    @media (max-width: 768px) {
+      background-image: url(https://res.cloudinary.com/jimymltta/image/upload/v1706562868/Yogi%20Food/hero-yogi-mobile_vwb7b6.png);
+    }
+  }
+
+  .button-container {
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .button {
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+
+  .text-gradient {
+    color: var(--primary-400);
+  }
+
+  :global(.darkmode .text-gradient) {
+    color: var(--primary-400);
+  }
 </style>
+
+<section class="relative bg-center bg-no-repeat bg-cover custom-background">
+  <div class="flex flex-col items-center justify-center h-full">
+    <div>
+      <div class="flex flex-col gap-3 mt-12 button-container sm:flex-row">
+        <a
+          class="button has-icon"
+          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz?geohash=u0ceggbg1c5e"
+        >
+          <Icon pack="ic" name="outline-food-bank" />
+          Commander
+        </a>
+        <a class="button has-icon color-primary" href="/carte">
+          <Icon pack="jam" name="document" />
+          Voir le menu
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
