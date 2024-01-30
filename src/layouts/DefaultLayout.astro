@@ -9,7 +9,7 @@ const {
   title = 'YOGI',
   description = 'La street food coréenne à Amiens, saine et gourmande !',
   url,
-  image = '/social-preview-image.png',
+  image = 'https://res.cloudinary.com/jimymltta/image/upload/v1706649188/Yogi%20Food/CleanShot_2024-01-30_at_22.12.38_2x_oy3oqm.png',
   author = 'NeoDesign',
 } = Astro.props
 ---
@@ -26,9 +26,7 @@ const {
     <SiteMeta
       title={title}
       description={description.substring(0, 100)}
-      url={Astro.site
-        ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-        : `https://accessible-astro.dev/${title.toLowerCase().replaceAll(' ', '-')}`}
+      url={`www.yogifood.fr`}
       image={image}
       author={author}
     />
