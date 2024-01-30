@@ -4,22 +4,17 @@ import { menuItems } from '../data/menuItems.js'
 import { Image } from 'astro:assets'
 ---
 
-<!-- ---
-import DefaultLayout from '../layouts/DefaultLayout.astro'
-import { menuItems } from '../data/menuItems.js'
-import { Image } from 'astro:assets'
----
-
 <DefaultLayout title="La carte">
-  <section class="y-12">
-    <div class="my-10 mx-14">
+  <section class="py-12">
+    <div class="my-6 mx-14">
       <h1>Notre carte</h1>
       <p>Découvrez nos délicieux plats</p>
       <p>Boisson gratuite pour les étudiants</p>
     </div>
-    <h2 class="my-10 mx-14 text-yogi-blue">Plats 음식</h2>
+
+    <h2 class="my-6 mx-14 text-yogi-blue">Plats 음식</h2>
     <div class="flex items-center justify-center mx-10">
-      <div class="grid grid-cols-1 gap-8 mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div class="grid grid-cols-1 gap-6 mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {
           menuItems.map((item) => (
             <div>
@@ -43,71 +38,67 @@ import { Image } from 'astro:assets'
       </div>
     </div>
 
-    <div>
-      <h2 class="mt-20 mx-14 text-yogi-blue">Combos 콤보</h2>
-      <p class="mx-14">Les Combos sont disponibles uniquement le midi</p>
-      <div class="flex items-center justify-center mx-10 mb-10">
-        <div class="grid grid-cols-1 gap-20 mx-4 md:grid-cols-2">
-          <a
-            href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
-          >
-            <div class="p-10 border border-white rounded">
-              <h4 class="font-bold">TOPOKI 떡볶이 + DEMI KIMBAP 김밥</h4>
-              <span>10,50€</span>
-            </div>
-          </a>
-          <a
-            href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
-          >
-            <div class="p-10 border border-white rounded">
-              <h4 class="font-bold">RAMEN + DEMI KIMBAP 김밥</h4>
-              <span>11€</span>
-            </div>
-          </a>
-        </div>
+    <h2 class="mt-12 mx-14 text-yogi-blue">Combos 콤보</h2>
+    <p class="mx-14">Les Combos sont disponibles uniquement le midi</p>
+    <div class="flex items-center justify-center mx-10 mb-6">
+      <div class="grid grid-cols-1 gap-6 mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <a
+          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
+        >
+          <div class="p-10 border border-white rounded">
+            <h4 class="font-bold">TOPOKI 떡볶이 + DEMI KIMBAP 김밥</h4>
+            <span>10,50€</span>
+          </div>
+        </a>
+        <a
+          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
+        >
+          <div class="p-10 border border-white rounded">
+            <h4 class="font-bold">RAMEN + DEMI KIMBAP 김밥</h4>
+            <span>11€</span>
+          </div>
+        </a>
       </div>
     </div>
 
-    <div>
-      <h2 class="mt-20 mx-14 text-yogi-blue">Dochirak 도시락</h2>
-      <p class="mx-14">À emporter uniquement</p>
-      <div class="flex items-center justify-center mx-10 my-10">
-        <div class="grid grid-cols-1 gap-20 mx-4 md:grid-cols-2">
-          <a
-            href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669045"
-          >
-            <div class="p-10">
-              <img
-                src="https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/Bulgogi_flgeaq.jpg"
-                width="500"
-                height="500"
-                class="object-cover w-full h-auto mb-6 aspect-square"
-              />
-              <h4 class="font-bold">BULGOGI 불고기</h4>
-              <span>11,50€ sans boisson | 13€ avec boisson</span>
-            </div>
-          </a>
-          <a
-            href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669049"
-          >
-            <div class="p-10">
-              <img
-                src="https://res.cloudinary.com/jimymltta/image/upload/v1705073717/Yogi%20Food/Spam_m6fkyj.jpg"
-                width="500"
-                height="500"
-                class="object-cover w-full h-auto mb-6 aspect-square"
-              />
-              <h4 class="font-bold">SPAM 스펨</h4>
-              <span>11,50€ sans boisson | 13€ avec boisson</span>
-            </div>
-          </a>
-        </div>
+    <h2 class="mt-12 mx-14 text-yogi-blue">Dochirak 도시락</h2>
+    <p class="mx-14">À emporter uniquement</p>
+    <div class="flex items-center justify-center mx-10 my-6">
+      <div class="grid grid-cols-1 gap-6 mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <a
+          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669045"
+        >
+          <div class="p-10">
+            <img
+              src="https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/Bulgogi_flgeaq.jpg"
+              width="500"
+              height="500"
+              class="object-cover w-full h-auto mb-6 aspect-square"
+            />
+            <h4 class="font-bold">BULGOGI 불고기</h4>
+            <span>11,50€ sans boisson | 13€ avec boisson</span>
+          </div>
+        </a>
+        <a
+          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669049"
+        >
+          <div class="p-10">
+            <img
+              src="https://res.cloudinary.com/jimymltta/image/upload/v1705073717/Yogi%20Food/Spam_m6fkyj.jpg"
+              width="500"
+              height="500"
+              class="object-cover w-full h-auto mb-6 aspect-square"
+            />
+            <h4 class="font-bold">SPAM 스펨</h4>
+            <span>11,50€ sans boisson | 13€ avec boisson</span>
+          </div>
+        </a>
       </div>
     </div>
 
-    <div>
-      <h2 class="mt-10 mx-14 text-yogi-blue">Banchan 반찬</h2>
-      <div class="flex items-center justify-center mx-10 my-10">
+    <h2 class="mt-12 mx-14 text-yogi-blue">Banchan 반찬</h2>
+    <div class="flex items-center justify-center mx-10 my-6">
+      <div class="grid grid-cols-1 gap-6 mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         <a
           href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669033"
         >
@@ -125,140 +116,8 @@ import { Image } from 'astro:assets'
       </div>
     </div>
 
-    <div>
-      <h2 class="mt-10 mx-14 text-yogi-blue">Boissons 음료</h2>
-      <div class="my-10 mx-14">
-        <p><span class="font-bold">Coréenne</span> - 3,50€</p>
-        <p><span class="font-bold">San Pellegrino 33cl, orange sanguine/orange/menthe & citron</span> - 2,10€</p>
-        <p><span class="font-bold">San Pellegrino 33cl, eau gazeuse</span> - 1,90€</p>
-        <p><span class="font-bold">Coca-Cola</span> - 1,90€</p>
-        <p><span class="font-bold">Sprite</span> - 1,90€</p>
-        <p><span class="font-bold">Evian 50cl</span> - 1,90€</p>
-        <p><span class="font-bold">Café coréen</span> - 2€</p>
-      </div>
-    </div>
-
-    <div>
-      <h2 class="mt-10 mx-14 text-yogi-blue">Desserts 디저트</h2>
-      <div class="my-10 mx-14">
-        <p><span class="font-bold">Cookie + Glace</span> - 5,50€</p>
-        <p><span class="font-bold">Croissant garni</span> - 5€</p>
-      </div>
-    </div>
-  </section>
-</DefaultLayout> -->
-<DefaultLayout title="La carte">
-  <section class="py-12">
-    <div class="mx-14 my-6">
-      <h1>Notre carte</h1>
-      <p>Découvrez nos délicieux plats</p>
-      <p>Boisson gratuite pour les étudiants</p>
-    </div>
-
-    <h2 class="mx-14 my-6 text-yogi-blue">Plats 음식</h2>
-    <div class="mx-10 flex items-center justify-center">
-      <div class="mx-4 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {
-          menuItems.map((item) => (
-            <div>
-              <a href={item.link} class="no-underline">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width="250"
-                  height="250"
-                  class="aspect-square h-auto w-full object-cover"
-                />
-                <div>
-                  <h3 class="font-bold">{item.name}</h3>
-                  <p>{item.description}</p>
-                  <span>{item.price}</span>
-                </div>
-              </a>
-            </div>
-          ))
-        }
-      </div>
-    </div>
-
-    <h2 class="mx-14 mt-12 text-yogi-blue">Combos 콤보</h2>
-    <p class="mx-14">Les Combos sont disponibles uniquement le midi</p>
-    <div class="mx-10 mb-6 flex items-center justify-center">
-      <div class="mx-4 grid grid-cols-1 gap-20 md:grid-cols-2">
-        <a
-          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
-        >
-          <div class="rounded border border-white p-10">
-            <h4 class="font-bold">TOPOKI 떡볶이 + DEMI KIMBAP 김밥</h4>
-            <span>10,50€</span>
-          </div>
-        </a>
-        <a
-          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
-        >
-          <div class="rounded border border-white p-10">
-            <h4 class="font-bold">RAMEN + DEMI KIMBAP 김밥</h4>
-            <span>11€</span>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <h2 class="mx-14 mt-12 text-yogi-blue">Dochirak 도시락</h2>
-    <p class="mx-14">À emporter uniquement</p>
-    <div class="mx-10 my-6 flex items-center justify-center">
-      <div class="mx-4 grid grid-cols-1 gap-20 md:grid-cols-2">
-        <a
-          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669045"
-        >
-          <div class="p-10">
-            <img
-              src="https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/Bulgogi_flgeaq.jpg"
-              width="500"
-              height="500"
-              class="mb-6 aspect-square h-auto w-full object-cover"
-            />
-            <h4 class="font-bold">BULGOGI 불고기</h4>
-            <span>11,50€ sans boisson | 13€ avec boisson</span>
-          </div>
-        </a>
-        <a
-          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669049"
-        >
-          <div class="p-10">
-            <img
-              src="https://res.cloudinary.com/jimymltta/image/upload/v1705073717/Yogi%20Food/Spam_m6fkyj.jpg"
-              width="500"
-              height="500"
-              class="mb-6 aspect-square h-auto w-full object-cover"
-            />
-            <h4 class="font-bold">SPAM 스펨</h4>
-            <span>11,50€ sans boisson | 13€ avec boisson</span>
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <h2 class="mx-14 mt-12 text-yogi-blue">Banchan 반찬</h2>
-    <div class="mx-10 my-6 flex items-center justify-center">
-      <a
-        href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669033"
-      >
-        <div class="p-10">
-          <img
-            src="https://res.cloudinary.com/jimymltta/image/upload/v1705073717/Yogi%20Food/Omelette_roule%CC%81_qxmspm.jpg"
-            width="250"
-            height="250"
-            class="mb-6 aspect-square h-auto object-cover"
-          />
-          <h4 class="font-bold">OMELETTE ROULÉE</h4>
-          <span>6,50€</span>
-        </div>
-      </a>
-    </div>
-
-    <h2 class="mx-14 mt-12 text-yogi-blue">Boissons 음료</h2>
-    <div class="mx-14 my-6">
+    <h2 class="mt-12 mx-14 text-yogi-blue">Boissons 음료</h2>
+    <div class="my-6 mx-14">
       <p><span class="font-bold">Coréenne</span> - 3,50€</p>
       <p><span class="font-bold">San Pellegrino 33cl, orange sanguine/orange/menthe & citron</span> - 2,10€</p>
       <p><span class="font-bold">San Pellegrino 33cl, eau gazeuse</span> - 1,90€</p>
@@ -268,8 +127,8 @@ import { Image } from 'astro:assets'
       <p><span class="font-bold">Café coréen</span> - 2€</p>
     </div>
 
-    <h2 class="mx-14 mt-12 text-yogi-blue">Desserts 디저트</h2>
-    <div class="mx-14 my-6">
+    <h2 class="mt-12 mx-14 text-yogi-blue">Desserts 디저트</h2>
+    <div class="my-6 mx-14">
       <p><span class="font-bold">Cookie + Glace</span> - 5,50€</p>
       <p><span class="font-bold">Croissant garni</span> - 5€</p>
     </div>
