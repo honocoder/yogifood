@@ -50,7 +50,7 @@ export const menuItems = [
   {
     id: 8,
     name: 'K-CHICKEN 양념치킨',
-    price: '6pcs : 11,70€ | 10pcs : 15€ | uniquement le mercredi et le samedi',
+    price: '6pcs : 11,70€ | 10pcs : 15€ | uniquement sur réservation',
     image: 'https://res.cloudinary.com/jimymltta/image/upload/v1705073727/Yogi%20Food/K-Chicken_m2gall.jpg',
     link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669031',
   },
