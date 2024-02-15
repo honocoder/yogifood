@@ -4,7 +4,7 @@ export const menuItems = [
     name: 'BULGOBI DOPBAP 불고기덮밥',
     price: '13.70€',
     image: 'https://res.cloudinary.com/jimymltta/image/upload/v1706217367/Yogi%20Food/Bibimbap_from_Gmail_j2ivj5.png',
-    link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669045',
+    link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669039',
   },
   {
     id: 2,
