@@ -2,6 +2,7 @@
 import DefaultLayout from '../layouts/DefaultLayout.astro'
 import { menuItems } from '../data/menuItems.js'
 import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon'
 ---
 
 <DefaultLayout title="La carte">
@@ -27,7 +28,7 @@ import { Image } from 'astro:assets'
                   class="object-cover w-full h-auto aspect-square"
                 />
                 <div>
-                  <h3 class="font-bold">{item.name}</h3>
+                  <h3 class="font-bold">{item.name} <span>{item.hot ? <Icon name="emojione:hot-pepper" size="32" /> : <span></span>}</span></h3>
                   <p>{item.description}</p>
                   <span>{item.price}</span>
                 </div>
@@ -46,7 +47,7 @@ import { Image } from 'astro:assets'
           href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
         >
           <div class="border border-white rounded">
-            <h4 class="font-bold">TOPOKI 떡볶이 + DEMI KIMBAP 김밥</h4>
+            <h4 class="font-bold">TOPOKI 떡볶이 + DEMI KIMBAP 김밥 <Icon name="emojione:hot-pepper" size="32" /></h4>
             <span>10,50€</span>
           </div>
         </a>
@@ -54,7 +55,7 @@ import { Image } from 'astro:assets'
           href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
         >
           <div class="border-white rounded order ">
-            <h4 class="font-bold">RAMEN + DEMI KIMBAP 김밥</h4>
+            <h4 class="font-bold">RAMEN + DEMI KIMBAP 김밥 <Icon name="emojione:hot-pepper" size="32" /></h4>
             <span>11€</span>
           </div>
         </a>
@@ -104,7 +105,7 @@ import { Image } from 'astro:assets'
         >
           <div class="p-10">
             <img
-              src="https://res.cloudinary.com/jimymltta/image/upload/v1705073717/Yogi%20Food/Omelette_roule%CC%81_qxmspm.jpg"
+              src="https://res.cloudinary.com/jimymltta/image/upload/v1710883534/Yogi%20Food/Yogi_Wanja_ektge1.jpg"
               width="250"
               height="250"
               class="object-cover h-auto mb-6 aspect-square"
@@ -129,8 +130,10 @@ import { Image } from 'astro:assets'
 
     <h2 class="mt-12 mx-14 text-yogi-blue">Desserts 디저트</h2>
     <div class="my-6 mx-14">
-      <p><span class="font-bold">Cookie + Glace</span> - 5,50€</p>
-      <p><span class="font-bold">Croissant garni</span> - 5€</p>
+      <p><span class="font-bold">Fondant au chocolat</span> - 6,50€</p>
+      <p><span class="font-bold">Incontournable cheesecake</span> - 6,50€</p>
+      <p><span class="font-bold">Rondement citron</span> - 6,50€</p>
+      <p><span class="font-bold">Soufflé glacé mango coco</span> - 6,50€</p>
     </div>
   </section>
 </DefaultLayout>
