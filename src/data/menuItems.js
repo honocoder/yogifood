@@ -95,7 +95,7 @@ export const menuItems = [
     description: "Raviolis fourrés au poulet et légumes",
     price: '6pcs : 7€',
     image: 'https://res.cloudinary.com/jimymltta/image/upload/v1710883906/Yogi%20Food/yogi-mandoo_elj6s3.jpg',
-    link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669031',
+    link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1524407376',
   },
   {
     id: 13,
