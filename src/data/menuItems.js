@@ -102,7 +102,7 @@ export const menuItems = [
     name: 'JUMOKBAP',
     description: "Boulettes de riz, légumes, assaisonnement coréen",
     price: '3pcs : 5€',
-    image: 'https://res.cloudinary.com/jimymltta/image/upload/v1710884221/Yogi%20Food/yogi-jumeokbap_dm6tnj.webp',
+    image: 'https://res.cloudinary.com/jimymltta/image/upload/v1711021981/Yogi%20Food/jumokbap_ffrzbq.jpg',
     link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669031',
   },
 ]
