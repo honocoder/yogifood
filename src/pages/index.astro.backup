@@ -1,0 +1,182 @@
+---
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Hero from '../components/Hero.astro'
+import Feature from '../components/Feature.astro'
+// import Counter from '../components/Counter.astro'
+import ContentMedia from '../components/ContentMedia.astro'
+
+import { Media } from 'accessible-astro-components'
+
+import tteokbokki from './assets/img/tteokbokki.jpg'
+---
+
+<!-- <DefaultLayout title="Home">
+  <Hero />
+  <section class="my-32">
+    <div class="container">
+      <h2 class="mb-6 text-4xl text-center text-yogi-blue md:mb-12 md:text-left md:text-5xl lg:mb-16 lg:text-6xl">
+        Notre cuisine est...
+      </h2>
+      <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="ph:heart-bold" title="SAINE" class="text-sm md:text-base lg:text-lg">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>LA STREET FOOD CORÉENNE EST SAINE, VOUS PERMETTANT DE VOUS FAIRE PLAISIR SANS VOUS FAIRE DE MAL.</b>
+          </p>
+        </Feature>
+        <Feature icon="ph:leaf-bold" title="DE SAISON">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>NOUS N'UTILISONS QUE DES PRODUITS DE SAISON, POUR VOUS GARANTIR UNE FRAÎCHEUR OPTIMALE.</b>
+          </p>
+        </Feature>
+        <Feature icon="ph:fork-knife" title="GOURMANDE">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>NOUS VOUS PROPOSONS DES PLATS GOURMANDS, QUI VOUS FERONT VOYAGER EN CORÉE.</b>
+          </p>
+        </Feature>
+        <Feature icon="mdi:clock-fast" title="RAPIDE">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>SI VOUS ÊTES PRÉSSÉ.E, PAS D'INQUIÉTUDE, NOUS VOUS SERVONS EN MOINS DE 20 MINUTES.</b>
+          </p>
+        </Feature>
+        <Feature icon="tabler:thumb-up" title="PRATIQUE">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>NOS PLATS SONT PRATIQUES : VOUS POUVEZ LES MANGER SUR PLACE, À EMPORTER OU EN LIVRAISON.</b>
+          </p>
+        </Feature>
+        <Feature icon="emojione-monotone:face-savouring-delicious-food" title="AUTHENTIQUE">
+          <p class="text-sm md:text-base lg:text-lg"><b>FAIT MAISON ET PAR FAIT PAR UN CORÉEN.</b></p>
+        </Feature>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <h2 class="mb-6 text-4xl text-center text-yogi-blue md:mb-12 md:text-left md:text-5xl lg:mb-16 lg:text-6xl">
+      Nos plats phares
+    </h2>
+    <ContentMedia
+      imgSrc="https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/BibimBap_cvgb9k.jpg"
+    >
+      <h2 class="text-yogi-blue">Bibimbab 비빔밥</h2>
+      <p class="text-2xl">
+        Le Bibimbap est un plat coréen composé de riz, légumes sautés, viande (souvent du bœuf), un œuf et sauce
+        gochujang (piquante). Les ingrédients sont disposés sur le riz, offrant une présentation colorée. Servi dans un
+        bol normal ou un dolsot (bol en pierre chaud), ce plat est connu pour sa personnalisation et ses saveurs
+        mélangées avant de manger.
+      </p>
+    </ContentMedia>
+    <ContentMedia
+      imgSrc="https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/Ddeokbokki_porx6d.jpg"
+      reverseImg={true}
+    >
+      <h2 class="text-yogi-blue">Ddeokbokki 떡볶이</h2>
+      <p class="text-2xl">
+        Le Ddeokbokki est un plat populaire coréen composé de gâteaux de riz longs et cylindriques, épicés et enrobés
+        d'une sauce rouge épaisse et sucrée. Ce plat est souvent agrémenté d'autres ingrédients comme des œufs durs, des
+        oignons verts, et parfois des nouilles de poisson, offrant un mélange unique de saveurs piquantes et de textures
+        moelleuses.
+      </p>
+    </ContentMedia>
+  </div>
+
+  <section class="container">
+    <h4>Tous nos plats sont fait maison et halal</h4>
+    <div class="flex items-center justify-center">
+      <div class="flex flex-col md:flex-row">
+        <ContentMedia
+          class="mb-4 md:mb-0 md:mr-4"
+          imgSrc="https://res.cloudinary.com/jimymltta/image/upload/v1706634156/Yogi%20Food/halal_uxvysq.png"
+        />
+        <ContentMedia
+          imgSrc="https://res.cloudinary.com/jimymltta/image/upload/v1706634156/Yogi%20Food/homemade_hkqney.png"
+        />
+      </div>
+    </div>
+  </section>
+</DefaultLayout> -->
+<DefaultLayout title="Home">
+  <Hero />
+  <section class="my-20 md:my-32">
+    <div class="container px-4 mx-auto">
+      <h2 class="mb-6 text-3xl text-center text-yogi-blue md:mb-12 md:text-left md:text-4xl lg:mb-16 lg:text-5xl">
+        Notre cuisine est...
+      </h2>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <Feature icon="ph:heart-bold" title="SAINE" class="text-sm md:text-base lg:text-lg">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>LA STREET FOOD CORÉENNE EST SAINE, VOUS PERMETTANT DE VOUS FAIRE PLAISIR SANS VOUS FAIRE DE MAL.</b>
+          </p>
+        </Feature>
+        <Feature icon="ph:leaf-bold" title="DE SAISON" class="text-sm md:text-base lg:text-lg">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>NOUS N'UTILISONS QUE DES PRODUITS DE SAISON, POUR VOUS GARANTIR UNE FRAÎCHEUR OPTIMALE.</b>
+          </p>
+        </Feature>
+        <Feature icon="ph:fork-knife" title="GOURMANDE" class="text-sm md:text-base lg:text-lg">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>NOUS VOUS PROPOSONS DES PLATS GOURMANDS, QUI VOUS FERONT VOYAGER EN CORÉE.</b>
+          </p>
+        </Feature>
+        <Feature icon="mdi:clock-fast" title="RAPIDE" class="text-sm md:text-base lg:text-lg">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>SI VOUS ÊTES PRÉSSÉ.E, PAS D'INQUIÉTUDE, NOUS VOUS SERVONS EN MOINS DE 20 MINUTES.</b>
+          </p>
+        </Feature>
+        <Feature icon="tabler:thumb-up" title="PRATIQUE" class="text-sm md:text-base lg:text-lg">
+          <p class="text-sm md:text-base lg:text-lg">
+            <b>NOS PLATS SONT PRATIQUES : VOUS POUVEZ LES MANGER SUR PLACE, À EMPORTER OU EN LIVRAISON.</b>
+          </p>
+        </Feature>
+        <Feature
+          icon="emojione-monotone:face-savouring-delicious-food"
+          title="AUTHENTIQUE"
+          class="text-sm md:text-base lg:text-lg"
+        >
+          <p class="text-sm md:text-base lg:text-lg"><b>FAIT MAISON ET PAR FAIT PAR UN CORÉEN.</b></p>
+        </Feature>
+      </div>
+    </div>
+  </section>
+
+  <div class="container px-4 mx-auto">
+    <h2 class="mb-6 text-3xl text-center text-yogi-blue md:mb-12 md:text-left md:text-4xl lg:mb-16 lg:text-5xl">
+      Nos plats phares
+    </h2>
+    <ContentMedia
+      imgSrc="https://res.cloudinary.com/jimymltta/image/upload/v1710883530/Yogi%20Food/Yogi_Bibimbap_zljah3.jpg"
+    >
+      <h2 class="text-yogi-blue">Bibimbab 비빔밥</h2>
+      <p class="text-xl">
+        Le Bibimbap est un plat coréen composé de riz, légumes sautés, viande (souvent du bœuf), un œuf et sauce
+        gochujang (piquante). Les ingrédients sont disposés sur le riz, offrant une présentation colorée. Servi dans un
+        bol normal ou un dolsot (bol en pierre chaud), ce plat est connu pour sa personnalisation et ses saveurs
+        mélangées avant de manger.
+      </p>
+    </ContentMedia>
+    <ContentMedia
+      imgSrc="https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/Ddeokbokki_porx6d.jpg"
+      reverseImg={true}
+    >
+      <h2 class="text-yogi-blue">Ddeokbokki 떡볶이</h2>
+      <p class="text-2xl">
+        Le Ddeokbokki est un plat populaire coréen composé de gâteaux de riz longs et cylindriques, épicés et enrobés
+        d'une sauce rouge épaisse et sucrée. Ce plat est souvent agrémenté d'autres ingrédients comme des œufs durs, des
+        oignons verts, et parfois des nouilles de poisson, offrant un mélange unique de saveurs piquantes et de textures
+        moelleuses.
+      </p>
+    </ContentMedia>
+  </div>
+
+  <section class="container px-4 mx-auto my-20">
+    <h4 class="mb-6 text-lg text-center md:text-left md:text-xl">Tous nos plats sont fait maison et halal</h4>
+    <div class="flex flex-col items-center justify-center md:flex-row">
+      <ContentMedia
+        class="mb-4 md:mr-4"
+        imgSrc="https://res.cloudinary.com/jimymltta/image/upload/v1706634156/Yogi%20Food/halal_uxvysq.png"
+      />
+      <ContentMedia
+        imgSrc="https://res.cloudinary.com/jimymltta/image/upload/v1706634156/Yogi%20Food/homemade_hkqney.png"
+      />
+    </div>
+  </section>
+</DefaultLayout>
