@@ -1,6 +1,6 @@
 ---
 import DefaultLayout from '../layouts/DefaultLayout.astro'
-import { menuItems } from '../data/menuItems.js'
+import { menuItems } from '../data/newMenu.js'
 import { Image } from 'astro:assets'
 import { Icon } from 'astro-icon'
 ---
@@ -39,28 +39,99 @@ import { Icon } from 'astro-icon'
       </div>
     </div>
 
-    <h2 class="mt-12 mx-14 text-yogi-blue">Combos 콤보</h2>
-    <p class="mx-14">Les Combos sont disponibles uniquement le midi</p>
-    <div class="flex items-center justify-center mx-10 mb-6">
+    <h2 class="mt-12 mx-14 text-yogi-blue">BOUNCHIK 반찬</h2>
+    <div class="flex items-center justify-center mx-10 my-6">
       <div class="grid grid-cols-1 gap-6 mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
         <a
-          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
+          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669035"
         >
-          <div class="border border-white rounded">
-            <h4 class="font-bold">TOPOKI 떡볶이 + DEMI KIMBAP 김밥 <Icon name="emojione:hot-pepper" size="32" /></h4>
-            <span>10,50€</span>
+          <div class="p-10">
+            <img
+              src="https://res.cloudinary.com/jimymltta/image/upload/v1705073726/Yogi%20Food/Ddeokbokki_porx6d.jpg"
+              width="250"
+              height="250"
+              class="object-cover h-auto mb-6 aspect-square"
+            />
+            <h4 class="font-bold">TOPOKI 떡볶이 <Icon name="emojione:hot-pepper" size="32" /></h4>
+            <p>Gâteaux pâte de riz, sauce topoki, mozzarella fondue | PIQUANT</p>
+            <span>9,9€</span>
           </div>
         </a>
+
         <a
-          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"
+          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669033"
         >
-          <div class="border-white rounded order ">
-            <h4 class="font-bold">RAMEN + DEMI KIMBAP 김밥 <Icon name="emojione:hot-pepper" size="32" /></h4>
-            <span>11€</span>
+          <div class="p-10">
+            <img
+              src="https://res.cloudinary.com/jimymltta/image/upload/v1710883534/Yogi%20Food/Yogi_Kimbap_d9ykbu.jpg"
+              width="250"
+              height="250"
+              class="object-cover h-auto mb-6 aspect-square"
+            />
+            <h4 class="font-bold">KIMBAP 김밥</h4>
+            <p>Riz, algue, légumes, oeuf, boeuf bulgogi</p>
+            <span>Demi : 6€ | Entier : 10€</span>
           </div>
         </a>
+
+        <a
+          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669031"
+        >
+          <div class="p-10">
+            <img
+              src="https://res.cloudinary.com/jimymltta/image/upload/v1710883531/Yogi%20Food/Yogi_KChicken6_diph6z.jpg"
+              width="250"
+              height="250"
+              class="object-cover h-auto mb-6 aspect-square"
+            />
+            <h4 class="font-bold">K-CHICKEN 양념치킨 <Icon name="emojione:hot-pepper" size="32" /></h4>
+            <p>Poulet, sauce coréenne sucrée et pimentée</p>
+            <span>6pcs : 9,6€ | 10pcs : 15,3€ | uniquement sur réservation</span>
+          </div>
+        </a>
+
+        <a
+          href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669031"
+        >
+          <div class="p-10">
+            <img
+              src="https://res.cloudinary.com/jimymltta/image/upload/v1710883531/Yogi%20Food/Yogi_KChicken6_diph6z.jpg"
+              width="250"
+              height="250"
+              class="object-cover h-auto mb-6 aspect-square"
+            />
+            <h4 class="font-bold">MANDOO</h4>
+            <p>Raviolis fourrés au poulet et légumes</p>
+              <span>6pcs : 7€</span>
+          </div>
+        </a>
+
       </div>
     </div>
+
+    <!--<h2 class="mt-12 mx-14 text-yogi-blue">Combos 콤보</h2>-->
+    <!--<p class="mx-14">Les Combos sont disponibles uniquement le midi</p>-->
+    <!--<div class="flex items-center justify-center mx-10 mb-6">-->
+    <!--  <div class="grid grid-cols-1 gap-6 mx-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">-->
+    <!--    <a-->
+    <!--      href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"-->
+    <!--    >-->
+    <!--      <div class="border border-white rounded">-->
+    <!--        <h4 class="font-bold">TOPOKI 떡볶이 + DEMI KIMBAP 김밥 <Icon name="emojione:hot-pepper" size="32" /></h4>-->
+    <!--        <span>10,50€</span>-->
+    <!--      </div>-->
+    <!--    </a>-->
+    <!--    <a-->
+    <!--      href="https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669054"-->
+    <!--    >-->
+    <!--      <div class="border-white rounded order ">-->
+    <!--        <h4 class="font-bold">RAMEN + DEMI KIMBAP 김밥 <Icon name="emojione:hot-pepper" size="32" /></h4>-->
+    <!--        <span>11€</span>-->
+    <!--      </div>-->
+    <!--    </a>-->
+    <!--  </div>-->
+    <!--</div>-->
 
     {/*
     <h2 class="mt-12 mx-14 text-yogi-blue">Dochirak 도시락</h2>
