@@ -29,7 +29,7 @@ export const menuItems = [
     description: "Riz, kimchi concombre, légumes, oeuf, sauce épicée à la coréenne",
     hot: true,
     price: 'Boeuf bulgogi : 14.60€ | Tofu : 15.40€',
-    image: 'https://res.cloudinary.com/jimymltta/image/upload/v1722199921/Yogi%20Food/Bibimbap_oi_zkxk1v.heic',
+    image: 'https://res.cloudinary.com/jimymltta/image/upload/v1722287584/Yogi%20Food/Bibimbap_oi_sphoqa.jpg',
     link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669041',
   },
   {
@@ -52,7 +52,7 @@ export const menuItems = [
     name: 'GOOKSOO 국수',
     description: "Nouilles, bouillon de boeuf, boeuf, algues assaisonnées, kimchi concombre, légumes, oeuf",
     price: '14.20€',
-    image: 'https://res.cloudinary.com/jimymltta/image/upload/v1722199921/Yogi%20Food/Gooksoo_kykyzg.heic',
+    image: 'https://res.cloudinary.com/jimymltta/image/upload/v1722287585/Yogi%20Food/Gooksoo_kykyzg_j2kgov.jpg',
     link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669042',
   },
   {
@@ -60,7 +60,7 @@ export const menuItems = [
     name: 'JAPCHE 잡채',
     description: "Nouilles de patates douces, oeuf, boeuf, légumes",
     price: '12.70€',
-    image: 'https://res.cloudinary.com/jimymltta/image/upload/v1722199921/Yogi%20Food/Japche_qlyrel.heic',
+    image: 'https://res.cloudinary.com/jimymltta/image/upload/v1722287585/Yogi%20Food/Japche_qlyrel_n3b0sp.jpg',
     link: 'https://deliveroo.fr/fr/menu/Amiens/saint-germain-les-halles-saint-leu-notre-dame/yogi-19-rue-de-metz/?geohash=u0ceggbg1c5e&item-id=1491669040',
   },
 
