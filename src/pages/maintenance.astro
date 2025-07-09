@@ -1,0 +1,194 @@
+---
+import '@astrojs/tailwind/base.css'
+import '../assets/scss/globals.scss'
+import SiteMeta from '../components/SiteMeta.astro'
+import { Icon } from 'astro-icon'
+---
+
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <SiteMeta
+      title="Maintenance - Yogi Food"
+      description="Yogi Food se prépare pour l'été avec une nouvelle carte fraîche et savoureuse"
+      url="www.yogifood.fr"
+      image="https://res.cloudinary.com/jimymltta/image/upload/v1706649188/Yogi%20Food/CleanShot_2024-01-30_at_22.12.38_2x_oy3oqm.png"
+      author="NeoDesign"
+    />
+  </head>
+  <body>
+    <div class="maintenance-bg">
+      <div class="maintenance-container">
+        <div class="maintenance-icon">
+          <Icon pack="ph" name="cooking-pot" />
+        </div>
+        
+        <h1 class="maintenance-title">
+          Yogi Food se prépare pour l'été !
+        </h1>
+        
+        <p class="maintenance-subtitle">
+          Nous travaillons actuellement sur notre nouvelle carte d'été
+          <span class="summer-icon">☀️</span>
+          avec des plats frais et savoureux
+        </p>
+        
+        <p class="maintenance-message">
+          Notre équipe mitonne de délicieuses surprises pour vous offrir
+          le meilleur de la cuisine coréenne de saison.
+          <br><br>
+          <strong>Le site reviendra très bientôt !</strong>
+        </p>
+        
+        <div class="social-links">
+          <a href="https://www.facebook.com/yogifood" class="social-link" title="Facebook">
+            <Icon pack="ph" name="facebook-logo" />
+          </a>
+          <a href="https://www.instagram.com/yogifood" class="social-link" title="Instagram">
+            <Icon pack="ph" name="instagram-logo" />
+          </a>
+          <a href="tel:+33123456789" class="social-link" title="Téléphone">
+            <Icon pack="ph" name="phone" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <style lang="scss" is:global>
+      // theme settings
+      :root {
+        --radius-small: 3px;
+        --radius-large: 6px;
+        --gap-default: 2rem;
+        --font-measure: 70ch;
+        --font-family-default: 'Open Sans Regular', sans-serif;
+        --font-family-special: 'Open Sans Extrabold', sans-serif;
+        // light theme
+        --font-color: var(--neutral-900);
+        --action-color: var(--primary-400);
+        --action-color-state: var(--primary-400);
+        --background: var(--neutral-200);
+        --primary-background: var(--primary-400);
+        --neutral-background: var(--neutral-200);
+      }
+
+      // sticky footer on low content pages
+      html,
+      body {
+        height: 100%;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        color: var(--font-color);
+        background-color: var(--background);
+        position: relative;
+      }
+    </style>
+
+    <style lang="scss">
+      .maintenance-bg {
+        background: linear-gradient(
+          135deg,
+          #f0f4f8 0%,
+          #e8f2ff 50%,
+          #f0f4f8 100%
+        );
+        min-height: 100vh;
+      }
+
+      .maintenance-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 2rem;
+        text-align: center;
+      }
+
+      .maintenance-icon {
+        font-size: 4rem;
+        color: var(--yogi-blue, #2563eb);
+        margin-bottom: 2rem;
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% { transform: scale(1); }
+        50% { transform: scale(1.05); }
+        100% { transform: scale(1); }
+      }
+
+      .maintenance-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: var(--yogi-blue, #2563eb);
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+      }
+
+      .maintenance-subtitle {
+        font-size: 1.25rem;
+        color: #4b5563;
+        margin-bottom: 2rem;
+        max-width: 600px;
+        line-height: 1.6;
+      }
+
+      .maintenance-message {
+        font-size: 1.1rem;
+        color: #6b7280;
+        margin-bottom: 3rem;
+        max-width: 500px;
+        line-height: 1.5;
+      }
+
+      .summer-icon {
+        font-size: 2rem;
+        color: #f59e0b;
+        margin: 0 0.5rem;
+      }
+
+      .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+      }
+
+      .social-link {
+        color: var(--yogi-blue, #2563eb);
+        font-size: 1.5rem;
+        transition: transform 0.3s ease;
+      }
+
+      .social-link:hover {
+        transform: scale(1.1);
+      }
+
+      @media (max-width: 768px) {
+        .maintenance-title {
+          font-size: 2rem;
+        }
+        
+        .maintenance-subtitle {
+          font-size: 1.1rem;
+        }
+        
+        .maintenance-message {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </body>
+</html>
