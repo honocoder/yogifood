@@ -1,6 +1,13 @@
 ---
-// Redirection vers la page de maintenance
-return Astro.redirect('/maintenance');
+import DefaultLayout from '../layouts/DefaultLayout.astro'
+import Hero from '../components/Hero.astro'
+import Feature from '../components/Feature.astro'
+// import Counter from '../components/Counter.astro'
+import ContentMedia from '../components/ContentMedia.astro'
+
+import { Media } from 'accessible-astro-components'
+
+import tteokbokki from './assets/img/tteokbokki.jpg'
 ---
 
 <!-- <DefaultLayout title="Home">
